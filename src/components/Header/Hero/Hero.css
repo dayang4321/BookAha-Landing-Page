@@ -1,0 +1,32 @@
+.hero{
+    
+}
+
+
+.black-box{  
+    width: 330px;
+    height: 290px; 
+    background: #000000;  
+}
+
+.title-box{
+    position: absolute;
+    top: 20%;
+    text-align: right;
+}
+
+.hero-title{
+    color: #FFFFFF;
+    font-family: 'Virgula Vulgaris', sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 86px;
+    text-align: right;
+}
+
+.hero button{
+    font-size: 36px;
+    padding: 22px 60px;
+    margin-left: auto;
+    margin-top: 34px;
+}

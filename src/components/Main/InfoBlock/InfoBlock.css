@@ -1,0 +1,35 @@
+.info-row{
+    padding: 125px 55px;
+}
+
+
+.info-title{
+    font-weight: 800;
+    font-size: 72px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.info-text{
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    margin-top: 60px;
+}
+
+.info-text-block{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.black-bg {
+    background-color: #000000;
+}
+
+.top-left{
+    transform: translate(-45px, -45px);
+}
+
+.top-right{
+    transform: translate(45px, -45px);
+}
