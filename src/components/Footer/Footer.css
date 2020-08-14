@@ -1,0 +1,22 @@
+.footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 200px 150px 120px;
+}
+
+.footer-title{
+    font-weight: 800;
+    font-size: 96px;
+    letter-spacing: -0.02em;
+    max-width: 854px;
+}
+
+.footer-base{
+    margin-top: 250px;
+    text-align: center;
+}
+
+.copyright{
+    font-size: 24px;
+    margin-bottom: 0px;
+}

@@ -1,25 +1,26 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import NavDropdown from './NavDropdown/NavDropdown'
+import logo from '../../../UI/Logo/logo.svg'
+import NavSelect from './NavSelect/NavSelect'
+import Button from '../../../UI/Button/Button'
+
+import './Navbar.css'
 
 
 const navbar = (props) => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark">
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar className="p-5" collapseOnSelect expand="lg" bg="transparent" variant="dark">
+            <Navbar.Brand href="#home" className="px-5"> <img src={logo} className="navbar-logo" alt="logo" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                  <Nav className="mr-auto">
-                    <Nav.Link href="#features">Features</Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
+                  <Nav className="ml-auto">
+                    <Nav.Link className="px-4" href="#features">About BookAha</Nav.Link>
+                    <Nav.Link className="px-4" href="#pricing">SignUp</Nav.Link>
                 </Nav>
-                <NavDropdown/>
+                <NavSelect/>
                   <Nav>
-                    <Nav.Link href="#deets">More deets</Nav.Link>
-                    <Nav.Link eventKey={2} href="#memes">
-                      Dank memes
-                    </Nav.Link>
+                    <Button btnText="Download App"/>
                   </Nav>
                 </Navbar.Collapse>
         </Navbar>

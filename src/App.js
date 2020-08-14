@@ -1,7 +1,9 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header'
 import Main from './components/Main/Main'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './components/Footer/Footer'
+
 
 import './App.css';
 
@@ -9,7 +11,8 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Main/>
+      <Main />
+      <Footer/>
     </div>
   );
 }

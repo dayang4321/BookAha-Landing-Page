@@ -1,5 +1,5 @@
 .info-row{
-    padding: 125px 55px;
+    padding: 125px 5px;
 }
 
 
@@ -8,12 +8,15 @@
     font-size: 72px;
     letter-spacing: -0.02em;
     color: #000000;
+    
 }
 
 .info-text{
     font-size: 24px;
     letter-spacing: -0.02em;
     margin-top: 60px;
+    max-width: 421px;
+    
 }
 
 .info-text-block{
@@ -27,9 +30,13 @@
 }
 
 .top-left{
-    transform: translate(-45px, -45px);
+    transform: translate(-40px, -45px);
 }
 
 .top-right{
-    transform: translate(45px, -45px);
+    transform: translate(40px, -45px);
+}
+
+.info-row .col-md-auto{
+    max-width: 50%!important;
 }
