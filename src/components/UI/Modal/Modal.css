@@ -1,0 +1,13 @@
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-content{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../../assets/images/reading.png);
+    background-size: cover;
+}
+
+.modal-wide{
+    width: 95vw;
+    max-width: 1200px;
+}

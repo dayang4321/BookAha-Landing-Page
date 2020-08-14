@@ -6,10 +6,12 @@ import Hero from './Hero/Hero'
 import './Header.css'
 
 
+
 const header = (props) => {
     return (
         <header className="header">
-            <Navbar/>
+            <Navbar />
+          
            <Hero/>
         </header>
      

@@ -1,5 +1,13 @@
-.footer button{
-    font-size: 36px;
+.register-form button{
+    font-size: 2em;
     padding: 22px 60px;
-    margin-left: auto;
+  
+}
+
+@media (max-width: 767px) { 
+    .register-form button{
+        font-size: 1.5em;
+        padding: 16px 40px;
+        margin: auto;
+    }
 }

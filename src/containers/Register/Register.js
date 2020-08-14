@@ -33,20 +33,20 @@ const Register = (props) => {
 
     return (
 
-        <Form>
+        <Form className="register-form">
             <Row>
-                <Col md={6} className="pr-4">
+                <Col md={6} className="pr-md-4 px-3 px-md">
                     <Input inputType="text" placeholder="Name" label="Name" name="name" groupId="name"/>
-                </Col>
-                <Col md={6}  className="pl-4">
+                </Col> 
+                <Col md={6}  className="pl-md-4 px-3 px-md">
                      <Input inputType="email" placeholder="Email Address" label="Email" name="email" groupId="email"/>
                 </Col>
             </Row>
-            <Row className="pt-4">
-                <Col md={6} className="pr-4 pt-3">
+            <Row className="pt-md-4 pt-3">
+                <Col md={6} className="pr-md-4 px-3 d-flex d-md px-md pt-3">
                     <Button btnText="Notify Me"/>
                 </Col>
-                <Col md={6}  className="pl-4 pt-3 d-flex align-items-center">
+                <Col md={6}  className="pl-md-4 px-3 px-md  pt-md-3 pt-4 d-flex align-items-center justify-content-center justify-content-md">
                    <Input inputType="checkbox" id="subscribe" label="I would love to join the beta test"/>
                 </Col>
 

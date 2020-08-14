@@ -1,0 +1,34 @@
+.dropdown-toggle.nav-link{
+    color: #ffffff
+}
+
+
+.dropdown-toggle::after {
+    visibility: hidden;
+}
+
+.dropdown-menu{
+    min-width: 100%;
+    font-size: 14px;
+
+}
+.dropdown{
+    font-size: 14px;
+}
+
+.dropdown,
+.navbar-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 767px) { 
+    .dropdown-menu {
+        top: 80%;
+        left: inherit;
+    }
+}
+
+

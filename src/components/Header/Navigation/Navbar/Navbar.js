@@ -1,24 +1,33 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import logo from '../../../UI/Logo/logo.svg'
-import NavSelect from './NavSelect/NavSelect'
+import NavDropdown from './NavDropdown/NavDropdown'
 import Button from '../../../UI/Button/Button'
 
 import './Navbar.css'
 
 
-const navbar = (props) => {
+const MainNavbar = (props) => {
+
+  const [navState, setNavState] = useState("");
+
+  const toggleNav = () => {
+   return setNavState(navState==="expanded"?"":"expanded")
+  }
+
+
+
     return (
-        <Navbar className="p-5" collapseOnSelect expand="lg" bg="transparent" variant="dark">
-            <Navbar.Brand href="#home" className="px-5"> <img src={logo} className="navbar-logo" alt="logo" /></Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar className={navState + " p-xl-5 p-lg-4 p-md-2 p-sm-3 p-2"} collapseOnSelect expand="md" onToggle={toggleNav} variant="dark">
+            <Navbar.Brand href="#" className="px-xl-5 px-lg-3 px-0"> <img src={logo} className="navbar-logo img-fluid" alt="logo" /></Navbar.Brand>
+                <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse className="px-xl-4 px-lg-3 px-md-0 px-0" id="responsive-navbar-nav">
                   <Nav className="ml-auto">
-                    <Nav.Link className="px-4" href="#features">About BookAha</Nav.Link>
-                    <Nav.Link className="px-4" href="#pricing">SignUp</Nav.Link>
+                    <Nav.Link className="px-xl-4 px-lg-3 px-2 py-3 py-md" href="#features">About BookAha</Nav.Link>
+                    <Nav.Link className="px-xl-4 px-lg-3 px-2 py-3 py-md" href="#pricing">SignUp</Nav.Link>
                 </Nav>
-                <NavSelect/>
+                <NavDropdown/>
                   <Nav>
                     <Button btnText="Download App"/>
                   </Nav>
@@ -29,4 +38,4 @@ const navbar = (props) => {
 }
 
 
-export default navbar
+export default MainNavbar

@@ -1,6 +1,6 @@
 .header {
     background-image: url(../../assets/images/hero-bg.png);
-    background-size: contain;
+    background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;

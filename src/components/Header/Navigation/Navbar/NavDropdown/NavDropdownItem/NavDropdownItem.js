@@ -1,9 +1,18 @@
 import React from 'react'
-import {NavDropdown} from 'react-bootstrap'
+import { NavDropdown } from 'react-bootstrap'
+import RoundFlag from '../../../../../UI/RoundFlag/RoundFlag'
 
 const navDropdownItem = (props) => {
     return (
-        <NavDropdown.Item href={props.href}>{props.children}</NavDropdown.Item>
+        <NavDropdown.Item id={props.id}
+            onClick={()=>props.clicked(props.menuText, props.imgSrc)}
+            href={props.href}>
+            <RoundFlag imgSrc={props.imgSrc} />
+            <span>
+            {props.menuText}
+            </span>
+          
+        </NavDropdown.Item>
     )
 }
 
