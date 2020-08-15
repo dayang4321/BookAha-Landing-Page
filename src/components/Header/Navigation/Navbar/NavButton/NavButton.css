@@ -73,7 +73,7 @@
     }
     
 
-  button.navbar-toggler:focus{
+  button:focus{
     outline: none;
   }
 
