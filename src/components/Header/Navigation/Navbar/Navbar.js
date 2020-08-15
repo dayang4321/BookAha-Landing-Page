@@ -24,12 +24,12 @@ const MainNavbar = (props) => {
                 <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse className="px-xl-4 px-lg-3 px-md-0 px-0" id="responsive-navbar-nav">
                   <Nav className="ml-auto">
-                    <Nav.Link className="px-xl-4 px-lg-3 px-2 py-3 py-md" href="#features">About BookAha</Nav.Link>
-                    <Nav.Link className="px-xl-4 px-lg-3 px-2 py-3 py-md" href="#pricing">SignUp</Nav.Link>
+                    <Nav.Link className="px-xl-4 px-lg-3 px-2 py-3 py-md" href="#about">About BookAha</Nav.Link>
+                    <Nav.Link className="px-xl-4 px-lg-3 px-2 py-3 py-md" href="#signup">SignUp</Nav.Link>
                 </Nav>
                 <NavDropdown/>
                   <Nav>
-                    <Button btnText="Download App"/>
+                    <Button btnText="Download App" clicked={props.openModal}/>
                   </Nav>
                 </Navbar.Collapse>
         </Navbar>

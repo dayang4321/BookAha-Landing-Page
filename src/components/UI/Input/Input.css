@@ -1,16 +1,14 @@
 
 
 .form-control {
-    height: 77px;
-    padding: .375rem 2.5rem;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
+    height: 3.33em;
+    padding: .2em 1.25em;
+    font-size: 1.33em;
     color: #858585;
     background-color: #C8C8C8;
     border: 1px solid #ced4da;
     border-radius: 0px;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 } 
 
 
@@ -39,3 +37,11 @@ input[type=checkbox]  {
         padding-top: 5px;
     }
 }
+
+
+
+@media (max-width: 420px) { 
+ 
+
+}
+

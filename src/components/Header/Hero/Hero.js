@@ -1,21 +1,16 @@
 import React from 'react'
 import Col from 'react-bootstrap/Col'
 import Button from '../../UI/Button/Button'
-import RegisterModal from '../../../containers/RegisterModal/RegisterModal'
 import './Hero.css'
 import { Container } from 'react-bootstrap'
 
 
 
 
-const Hero = (props) => {
+const hero = (props) => {
 
     
-    const [modalShow, setModalShow] = React.useState(false);
 
-    const toggleModal = () => {
-       return setModalShow(!modalShow)
-    }
     
     return (
         <Container className="my-auto">
@@ -23,11 +18,11 @@ const Hero = (props) => {
           
             
             <Col lg={7} className="hero ml-auto">
-            <RegisterModal show={modalShow} onHide={toggleModal} />
+          
                     <div className="black-box">
                         <div className="title-box">
                             <h1 className="hero-title mb-0">Share thoughts from books you love</h1>
-                        <Button btnText="Get the App" clicked={toggleModal}/>
+                        <Button btnText="Get the App" clicked={props.openModal}/>
                         </div>
                     </div>
                     
@@ -38,4 +33,4 @@ const Hero = (props) => {
 }
 
 
-export default Hero
+export default hero

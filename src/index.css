@@ -12,6 +12,7 @@ body {
 
 :root{
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 992px) { 

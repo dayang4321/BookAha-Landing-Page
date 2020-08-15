@@ -7,7 +7,7 @@ import './Footer.css'
 
 const footer = (main) => {
     return (
-        <footer className="footer">
+        <footer className="footer" id="signup">
             <h1 className="footer-title mb-5">
                 Be the first to know when we launch
             </h1>
