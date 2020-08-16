@@ -8,11 +8,11 @@ import './Input.css'
 
 const input = (props) => {
 
-    if (props.inputType==="checkbox") {
+    if (props.inputAttr.type==="checkbox") {
         return (
             <Form.Group>
             <Form.Check
-          
+          {...props.inputAttr}
             type={props.inputType}
             id={props.id}
             label={props.label}/>
@@ -24,7 +24,7 @@ const input = (props) => {
         return (
             <Form.Group  controlId={props.groupId}>
             <Form.Label  srOnly>{props.label}</Form.Label>
-            <Form.Control type={props.inputType} placeholder={props.placeholder} />
+            <Form.Control {...props.inputAttr} />
             </Form.Group>
         )
     }
