@@ -77,7 +77,7 @@
 				"Timeout": "25",
 				"Code": {
 					"S3Bucket": "amplify-bookaha-dev-132914-deployment",
-					"S3Key": "amplify-builds/bookahaFunction-50516478352b4f444e31-build.zip"
+					"S3Key": "amplify-builds/bookahaFunction-666a545a416c6c666c73-build.zip"
 				}
 			}
 		},
