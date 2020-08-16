@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/users",
+            "lambdaFunction": "bookahaFunction",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "bookahaApi",
+    "apiName": "bookahaApi",
+    "functionArns": [
+        {
+            "lambdaFunction": "bookahaFunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-bookaha-dev-132914-authRole",
+        "unAuthRoleName": "amplify-bookaha-dev-132914-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "bookahaFunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
