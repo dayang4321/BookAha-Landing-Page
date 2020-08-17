@@ -10,9 +10,8 @@
 
 
 .navbar{
-    position: absolute;
-    width: 100%;
-    z-index: 10;
+   
+    background: linear-gradient(180deg, #000000 35.42%, rgba(48, 48, 48, 0) 100%);
     background-color: transparent;
     max-height: 20vh;
 }

@@ -8,7 +8,7 @@ const MainModal=(props)=> {
     return (
       <Modal {...props} size="xl" aria-labelledby="registration-modal"  dialogClassName="modal-wide" centered>
         <Modal.Header closeButton>
-          <img src={logo} alt="logo" className="mx-auto"/> 
+          <img src={logo} alt="logo" className="footer-logo mx-auto"/> 
         </Modal.Header>
         <Modal.Body>
             {props.children}

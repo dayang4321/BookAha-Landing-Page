@@ -4,6 +4,16 @@
   
 }
 
+
+@media (max-width: 1300px) { 
+    .register-form button{
+        font-size: 1.83em;
+        padding: 19px 50px;
+        margin: auto;
+    }
+}
+
+
 @media (max-width: 767px) { 
     .register-form button{
         font-size: 1.5em;

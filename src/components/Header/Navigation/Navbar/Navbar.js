@@ -21,7 +21,7 @@ const MainNavbar = (props) => {
 
 
     return (
-      <Navbar className={navState + " p-xl-5 p-lg-4 p-md-2 p-0"} id="mainNavbar" expanded={navState==="expanded"&&true}  expand="md" onToggle={toggleNav} variant="dark">
+      <Navbar  className={navState + " p-xl-5 p-lg-4 p-md-2 p-0"} id="mainNavbar" fixed="top" expanded={navState==="expanded"&&true}  expand="md" onToggle={toggleNav} variant="dark">
       <Navbar.Brand href="#" className="px-xl-5 px-lg-4 px-0 mx-3 mx-md-0"> <img src={logo} className="navbar-logo img-fluid" alt="logo" /></Navbar.Brand>
   <NavButton navButtonClass={navState} clicked={toggleNav}/>
           <Navbar.Collapse className="px-xl-4 px-lg-3 px-md-0 px-0" id="responsive-navbar-nav">

@@ -1,9 +1,11 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
 
+import './Button.css'
+
 const myButton = (props) => {
     return (
-        <Button variant="light" type={props.btnType}  onClick={props.clicked?() => props.clicked() : null}  className="b-0 text-dark bg-white border-0 rounded-0"> {props.btnText} </Button>
+        <Button variant="light" type={props.btnType}  onClick={props.clicked?() => props.clicked() : null}  className="white-button b-0 text-dark bg-white border-0 rounded-0"> {props.btnText} </Button>
     )
 }
 

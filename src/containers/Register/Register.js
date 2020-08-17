@@ -97,7 +97,7 @@ const Register = (props) => {
         
         <Form className="register-form" noValidate onSubmit={handleSubmit} autoComplete="on">
         <Row>
-            <Col md={6} className="pr-md-4 px-3 px-md">
+            <Col md={6} className="pr-md-4 px-3 px-md mb-3 mb-md">
                 <Input inputAttr={{
                     type: "text", placeholder: "Name",
                     name: "name", onChange: (e) => inputChangeHandler(e,"name",registerForm, setRegisterForm), required: true,
