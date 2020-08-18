@@ -1,0 +1,58 @@
+  {
+    "header":{
+        "navbar": {
+            "about" : "À propos de BookAha.",
+            "signup":  "S'inscrire",
+            "download": "Télécharger"
+        },
+        "hero":{
+            "title": "Partagez des idées de livres que vous aimez",
+            "getapp": "Obtenir l'application"
+        }
+    },
+
+    "main": {
+        "block1": {
+            "title": "Organisez vos pensées",
+            "text": "Organisez toute l'inspiration, les idées et les leçons tirées des livres que vous lisez."
+        },
+        "block2": {
+            "title": "Partagez vos impressions",
+            "text": "Envoyez vos réflexions sur des livres et des articles à une communauté de lecteurs comme vous."
+        },
+        "block3": {
+            "title": "Découvrir de nouveaux contenus",
+            "text": "Trouvez des critiques de livres, de nouveaux livres, des événements et d'autres contenus passionnants organisés pour vous."
+        }
+    },
+
+    "register": {
+        "title":{
+            "footer": {
+                "default": "Soyez les premiers informés de notre lancement",
+                "success": "Félicitations! Vous serez notifié!"
+            },
+            "modal": {
+                "default": "Accédez gratuitement à des clubs de lecture exclusifs en vous inscrivant au test bêta",
+                "success": "Félicitations! Vous serez les premiers informés de notre lancement"
+            },
+            "error": "Oups! Il semble qu'une erreur s'est produite"
+        },
+        "input":{
+            "name": {
+                "label": "Nom",
+                "placeholder": "Nom"
+            },
+            "email": {
+                "label": "Adresse e-mail",
+                "placeholder": "Adresse e-mail"
+            },
+
+            "isSubscribed": {
+                "label": "J'aimerais participer au test bêta"
+            }
+        },
+
+        "notify": "Me notifier"
+    }
+  }

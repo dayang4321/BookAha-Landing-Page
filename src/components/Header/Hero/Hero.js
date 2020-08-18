@@ -3,14 +3,14 @@ import Col from 'react-bootstrap/Col'
 import Button from '../../UI/Button/Button'
 import './Hero.css'
 import { Container } from 'react-bootstrap'
+import { useTranslation } from "react-i18next";
 
 
 
-
-const hero = (props) => {
+const Hero = (props) => {
 
     
-
+    const { t } = useTranslation();
     
     return (
         <Container className="my-auto">
@@ -21,8 +21,8 @@ const hero = (props) => {
           
                     <div className="black-box">
                         <div className="title-box">
-                            <h1 className="hero-title mb-0">Share thoughts from books you love</h1>
-                        <Button btnText="Get the App" clicked={props.openModal}/>
+                            <h1 className="hero-title mb-0">{t("header.hero.title")}</h1>
+                        <Button btnText={t("header.hero.getapp")}clicked={props.openModal}/>
                         </div>
                     </div>
                     
@@ -33,4 +33,4 @@ const hero = (props) => {
 }
 
 
-export default hero
+export default Hero

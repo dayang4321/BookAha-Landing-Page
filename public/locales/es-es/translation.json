@@ -1,0 +1,58 @@
+  {
+    "header":{
+        "navbar": {
+            "about" : "Acerca de BookAha",
+            "signup": "Regístrate",
+            "download": "Descargar ahora"
+        },
+        "hero": {
+            "title":  "Comparte opiniones sobre tus libros favoritos",
+            "getapp": "Obtener la aplicación"
+        }
+    },
+
+    "main": {
+        "block1": {
+            "title": "Organiza tus ideas",
+            "text": "Organiza toda la inspiración, las ideas y las lecciones de los libros que estás leyendo."
+        },
+        "block2": {
+            "title": "Comparta sus opiniones",
+            "text": "Envíe sus pensamientos sobre libros y artículos a una comunidad de lectores como usted."
+        },
+        "block3": {
+            "title": "Descubre contenido nuevo",
+            "text": "Encuentra reseñas de libros, libros nuevos, eventos y más contenido interesante seleccionado para ti."
+        }
+    },
+
+    "register": {
+        "title":{
+            "footer": {
+                "default": "Sé el primero en saber cuándo lanzamos",
+                "success": "¡Felicidades! ¡Se le notificará!"
+            },
+            "modal": {
+                "default": "Obtenga acceso gratuito a clubes de lectura exclusivos cuando se registre para la prueba beta",
+                "success": "¡Felicitaciones! Serás el primero en saber cuándo lanzamos"
+            },
+            "error": "¡Vaya! Parece que algo salió mal"
+        },
+        "input":{
+            "name": {
+                "label": "Nombre",
+                "placeholder": "Nombre"
+            },
+            "email": {
+                "label": "Dirección de correo electrónico",
+                "placeholder": "Dirección de correo electrónico"
+            },
+
+            "isSubscribed": {
+                "label":  "Me encantaría unirme a la prueba beta"
+            }
+        },
+
+        "notify": "Notificarme"
+    }
+  }

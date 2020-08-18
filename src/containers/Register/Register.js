@@ -7,6 +7,7 @@ import config from '../../aws-exports'
 import {inputChangeHandler} from '../../shared/utility'
 import Spinner from '../../components/UI/Spinner/Spinner'
 import './Register.css'
+import { useTranslation } from "react-i18next";
 
 
 Amplify.configure(config);
@@ -40,6 +41,8 @@ const registerFormObj = {
 
 
 const Register = (props) => {
+
+    const { t } = useTranslation();
 
     const [formLoading, setFormLoading] = useState(false);
 
@@ -99,30 +102,30 @@ const Register = (props) => {
         <Row>
             <Col md={6} className="pr-md-4 px-3 px-md mb-3 mb-md">
                 <Input inputAttr={{
-                    type: "text", placeholder: "Name",
+                    type: "text", placeholder: t("register.input.name.placeholder"),
                     name: "name", onChange: (e) => inputChangeHandler(e,"name",registerForm, setRegisterForm), required: true,
                 isValid: shouldValidate("name"), isInvalid:shouldInValidate("name")
-                }} label="Name" groupId="name" />
+                }} label={ t("register.input.name.label")} groupId="name" />
             </Col> 
             <Col md={6}  className="pl-md-4 px-3 px-md">
                 <Input inputAttr={{
-                    type: "email", placeholder: "Email Address", name: "email",
+                    type: "email", placeholder:t("register.input.email.placeholder"), name: "email",
                     onChange: (e) => inputChangeHandler(e, "email", registerForm, setRegisterForm), required: true,
                     isValid: shouldValidate("email"), isInvalid:shouldInValidate("email")
-                }} label="Email" groupId="email" />
+                }} label={t("register.input.email.label")} groupId="email" />
             </Col>
         </Row>
             
         <Row className="pt-md-4 pt-3">
             <Col md={6} className="pr-md-4 px-3 d-flex d-md px-md pt-3">
-                <Button btnText="Notify Me" btnType="submit"/>
+                <Button btnText={t("register.notify")} btnType="submit"/>
             </Col>
             <Col md={6}  className="pl-md-4 px-3 px-md  pt-md-3 pt-4 d-flex align-items-center justify-content-center justify-content-md">
                 <Input inputAttr={{
                     type: "checkbox", name: "isSubscribed",
                     onChange: (e) => inputChangeHandler(e,"isSubscribed",registerForm, setRegisterForm),
                     required: false
-                }} id="isSubscribed" label="I would love to join the beta test" />
+                }} id="isSubscribed" label={ t("register.input.isSubscribed.label")} />
             </Col>
 
         </Row>
@@ -132,19 +135,21 @@ const Register = (props) => {
 
     let formHeader;
 
+   
+
 
     switch (props.registerParent) {
         case "footer":
             formHeader = (
                 <h1 className="footer-title mb-5">
-                {isSignedUp?"Congrats! You'll be Notified! ":"Be the first to know when we launch"}
+                {isSignedUp? t("register.title.footer.success") :  t("register.title.footer.default") }
             </h1>
             )
             break;
             case "modal":
                 formHeader = (
                     <h1 className="register-modal-title mb-3">
-                    {isSignedUp?"Congrats! You'll be the first to know when we launch":" Get free access to exclusive reading clubs when you sign up for the beta test"}
+                    {isSignedUp? t("register.title.modal.success") : t("register.title.modal.default") }
                     </h1>
                 )
                 break;
@@ -157,7 +162,7 @@ const Register = (props) => {
 
 
         formLoading? <Spinner /> : <>
-            {hasError? <h1 className="text-white mb-4">Oops! Looks like something went wrong</h1>:formHeader}
+            {hasError? <h1 className="text-white mb-4">{ t("register.title.error")}</h1>:formHeader}
             {formBody}
         </>
        

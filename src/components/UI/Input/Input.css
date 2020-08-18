@@ -43,8 +43,14 @@ input[type=checkbox]  {
 .form-check-label {
     margin-left: 50px;
     font-size: 1.33em;
-    padding-top: 10px;
     color: #FFFFFF;
+}
+
+}
+
+@media (max-width: 1260px) { 
+    .form-check-label {
+        padding-top: 5px;
 }
 
 }
@@ -60,6 +66,9 @@ input[type=checkbox]  {
         height: 35px;
         padding-right: 30px;
     }
+    .form-check-label {
+        padding-top: 0px;
+}
 
 }
 

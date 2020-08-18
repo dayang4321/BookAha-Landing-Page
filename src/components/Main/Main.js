@@ -2,20 +2,25 @@ import React from 'react'
 import './Main.css'
 import { Container } from 'react-bootstrap'
 import InfoBlock from './InfoBlock/InfoBlock'
+import { useTranslation } from "react-i18next";
 
-const main = (props) => {
+
+const Main = (props) => {
+
+  const { t, i18n } = useTranslation();
+
     return (
         <main id="about">
             <Container fluid='lg'>
-                <InfoBlock infoTitle="Organize your thoughts" textClass="pl-xl-5 pl-lg-4  pl-sm-5 pl-4" infoText="Organise all the inspiration, ideas and lessons from books you’re reading."
+                <InfoBlock infoTitle={t("main.block1.title")} textClass="pl-xl-5 pl-lg-4  pl-sm-5 pl-4" infoText={t("main.block1.text")} 
                   imgBlockClass="mx-auto"  imgSrc="notes.png" imgAlt="notes" imgClass="top-left"/>
-                <InfoBlock infoTitle="Share your thoughts" textClass="pl-sm-5 pl-4" infoText="Send your thoughts on books and articles to a community of readers like yourself."
+                <InfoBlock infoTitle={t("main.block2.title")} textClass="pl-sm-5 pl-4" infoText={t("main.block2.text")} 
                   imgBlockClass="mx-auto"  imgSrc="bookClub.png" imgAlt="notes" imgClass="top-right" imgOrder="first" />
-                <InfoBlock infoTitle="Discover New thoughts" textClass="pl-xl-5 pl-lg-4  pl-sm-5 pl-4" infoText="Find book reviews, new books, events and more exciting content curated for you."
+                <InfoBlock infoTitle={t("main.block3.title")} textClass="pl-xl-5 pl-lg-4  pl-sm-5 pl-4" infoText={t("main.block3.text")} 
                   imgBlockClass="ml-md-n5 pl-md-4 pl-lg mx-auto"  imgSrc="library.png" imgAlt="notes" imgClass="top-right" />
             </Container>
         </main>
     )
 }
 
-export default main
+export default Main

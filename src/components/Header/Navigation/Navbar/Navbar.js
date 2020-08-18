@@ -5,12 +5,18 @@ import logo from '../../../UI/Logo/logo.svg'
 import NavDropdown from './NavDropdown/NavDropdown'
 import Button from '../../../UI/Button/Button'
 import NavButton from './NavButton/NavButton';
+import { useTranslation } from "react-i18next";
+
 
 import './Navbar.css'
 
 
 
+
+
 const MainNavbar = (props) => {
+
+  const { t } = useTranslation();
 
   const [navState, setNavState] = useState("");
 
@@ -26,12 +32,12 @@ const MainNavbar = (props) => {
   <NavButton navButtonClass={navState} clicked={toggleNav}/>
           <Navbar.Collapse className="px-xl-4 px-lg-3 px-md-0 px-0" id="responsive-navbar-nav">
             <Nav className="ml-auto">
-              <Nav.Link className="px-xl-4 px-lg-3 px-2 py-3 py-md" href="#about">About BookAha</Nav.Link>
-              <Nav.Link className="px-xl-4 px-lg-3 px-2 py-3 py-md" href="#signup">SignUp</Nav.Link>
+              <Nav.Link className="px-xl-4 px-lg-3 px-2 py-3 py-md" href="#about">{t("header.navbar.about")}</Nav.Link>
+              <Nav.Link className="px-xl-4 px-lg-3 px-2 py-3 py-md" href="#signup">{t("header.navbar.signup")}</Nav.Link>
           </Nav>
           <NavDropdown/>
             <Nav>
-      <Button btnText="Download App" clicked={props.openModal}/>
+      <Button btnText={t("header.navbar.download")} clicked={props.openModal}/>
             </Nav>
           </Navbar.Collapse>
   </Navbar>
