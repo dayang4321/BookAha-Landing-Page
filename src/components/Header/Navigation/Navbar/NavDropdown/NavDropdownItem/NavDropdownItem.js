@@ -7,7 +7,7 @@ import './NavDropdownItem.css'
 const navDropdownItem = (props) => {
     return (
         <NavDropdown.Item id={props.id} 
-            className={props.onDisplay===props.menuText?"d-none": " "}
+            className={props.onDisplay===props.menuText?"d-none ": " mx-auto"}
             onClick={()=>props.clicked(props.menuText, props.imgSrc, props.lang)}
             href={props.href}>
             <RoundFlag imgSrc={props.imgSrc} />
