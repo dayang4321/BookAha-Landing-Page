@@ -119,10 +119,10 @@ const Register = (props) => {
             </Col>
             <Col md={6}  className="pl-md-4 px-3 px-md  pt-md-3 pt-4 d-flex align-items-center justify-content-center justify-content-md">
                 <Input inputAttr={{
-                    type: "checkbox", name: "subscribed",
+                    type: "checkbox", name: "isSubscribed",
                     onChange: (e) => inputChangeHandler(e,"isSubscribed",registerForm, setRegisterForm),
                     required: false
-                }} id="subscribe" label="I would love to join the beta test" />
+                }} id="isSubscribed" label="I would love to join the beta test" />
             </Col>
 
         </Row>
