@@ -61,6 +61,7 @@ export const inputChangeHandler = (event, inputIdentifier, Form, setForm) => {
         if (updatedForm[elem].validation) { formIsValid = updatedForm[elem].valid && formIsValid }
     
         setForm({ ...updatedForm, formValidity: formIsValid });
+        //console.log(updatedForm)
     
     };
 

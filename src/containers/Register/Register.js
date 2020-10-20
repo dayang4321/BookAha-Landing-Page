@@ -8,6 +8,7 @@ import {inputChangeHandler} from '../../shared/utility'
 import Spinner from '../../components/UI/Spinner/Spinner'
 import './Register.css'
 import { useTranslation } from "react-i18next";
+import Axios from '../../axios-base'
 
 
 Amplify.configure(config);
@@ -74,13 +75,19 @@ const Register = (props) => {
 
         else {
             setFormLoading(true);
-            API.post('bookahaApi', '/users', {
-                body: {
-                    name: registerForm.name.value,
-                    email: registerForm.email.value,
-                    isSubscribed: registerForm.isSubcribed.value,
-                }
-            })
+            // API.post('bookahaApi', '/users', {
+            //     body: {
+            //         name: registerForm.name.value,
+            //         email: registerForm.email.value,
+            //         isSubscribed: registerForm.isSubcribed.value,
+            //     }
+            // })
+            const formData =  {
+                         name: registerForm.name.value,
+                         email: registerForm.email.value,
+                         isSubscribed: registerForm.isSubcribed.value,
+                     }
+            Axios.post('/launch',  formData)
             .then(res => {
                 setFormLoading(false);
                 setIsSignedUp(true);
