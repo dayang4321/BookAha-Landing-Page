@@ -69,7 +69,8 @@ const Register = (props) => {
     }
   
   
-    const handleSubmit = (event) => {     
+    const handleSubmit = (event) => {   
+        console.log(registerForm)
         event.preventDefault();
         if (registerForm.formValidity === false) { }
 
@@ -85,7 +86,7 @@ const Register = (props) => {
             const formData =  {
                          name: registerForm.name.value,
                          email: registerForm.email.value,
-                         isSubscribed: registerForm.isSubcribed.value,
+                         isSubscribed: registerForm.isSubscribed.value,
                      }
             Axios.post('/launch',  formData)
             .then(res => {
@@ -103,6 +104,8 @@ const Register = (props) => {
     }      
     }
 
+ 
+
     const formBody = (
         
         <Form className="register-form" noValidate onSubmit={handleSubmit} autoComplete="on">
@@ -111,14 +114,14 @@ const Register = (props) => {
                 <Input inputAttr={{
                     type: "text", placeholder: t("register.input.name.placeholder"),
                     name: "name", onChange: (e) => inputChangeHandler(e,"name",registerForm, setRegisterForm), required: true,
-                isValid: shouldValidate("name"), isInvalid:shouldInValidate("name")
+                isValid: shouldValidate("name"), isInvalid:shouldInValidate("name"), value: registerForm.name.value,
                 }} label={ t("register.input.name.label")} groupId="name" />
             </Col> 
             <Col md={6}  className="pl-md-4 px-3 px-md">
                 <Input inputAttr={{
                     type: "email", placeholder:t("register.input.email.placeholder"), name: "email",
                     onChange: (e) => inputChangeHandler(e, "email", registerForm, setRegisterForm), required: true,
-                    isValid: shouldValidate("email"), isInvalid:shouldInValidate("email")
+                    isValid: shouldValidate("email"), isInvalid:shouldInValidate("email"), value: registerForm.email.value,
                 }} label={t("register.input.email.label")} groupId="email" />
             </Col>
         </Row>
@@ -131,7 +134,7 @@ const Register = (props) => {
                 <Input inputAttr={{
                     type: "checkbox", name: "isSubscribed",
                     onChange: (e) => inputChangeHandler(e,"isSubscribed",registerForm, setRegisterForm),
-                    required: false
+                    required: false, value: registerForm.isSubcribed.value,
                 }} id="isSubscribed" label={ t("register.input.isSubscribed.label")} />
             </Col>
 
