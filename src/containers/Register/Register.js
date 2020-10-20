@@ -86,7 +86,7 @@ const Register = (props) => {
             const formData =  {
                          name: registerForm.name.value,
                          email: registerForm.email.value,
-                         isSubscribed: registerForm.isSubscribed.value,
+                         subscribe: registerForm.isSubscribed.value,
                      }
             Axios.post('/launch',  formData)
             .then(res => {
