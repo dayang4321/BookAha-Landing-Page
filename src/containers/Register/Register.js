@@ -32,7 +32,7 @@ const registerFormObj = {
       valid: false,
       touched: false
     },
-     isSubcribed: {
+     isSubscribed: {
         value: false,
         valid: true,
         touched: false
@@ -134,7 +134,7 @@ const Register = (props) => {
                 <Input inputAttr={{
                     type: "checkbox", name: "isSubscribed",
                     onChange: (e) => inputChangeHandler(e,"isSubscribed",registerForm, setRegisterForm),
-                    required: false, value: registerForm.isSubcribed.value,
+                    required: false, value: registerForm.isSubscribed.value,
                 }} id="isSubscribed" label={ t("register.input.isSubscribed.label")} />
             </Col>
 
