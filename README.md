@@ -1,4 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and is deployed using AWS Amplify.
+
+## Figma Design Link
+
+https://www.figma.com/file/u66DEHb05elcQJ1BF0IvsW/Untitled?node-id=0%3A1
+
+## Live Deployment
+
+https://master.d1w13cy7oz03c1.amplifyapp.com/
+
 
 ## Available Scripts
 
