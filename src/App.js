@@ -1,20 +1,41 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header/Header'
-import Main from './components/Main/Main'
-import Footer from './components/Footer/Footer'
+
+import { Redirect, Route, Switch } from "react-router";
+import { AuthContext } from "./context/AuthContext";
+
+import Home from "./containers/Home/Home";
+import Admin from "./containers/Admin/Admin";
+import Logout from "./containers/Auth/Logout/Logout";
+import Auth from "./containers/Auth/Auth";
 
 
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <Main />
-      <Footer/>
-    </div>
+
+  const authContext = useContext(AuthContext);
+
+  let routes = (
+    <Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/auth" component={Auth} />
+      <Redirect to="/" />
+      </Switch>
   );
+
+  if (authContext.isAuth) {
+    routes = (
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/admin" component={Admin} />
+        <Route path="/logout" component={Logout} />
+        <Redirect to="/" />
+      </Switch>
+    );
+  }
+ 
+  return <>{routes}</>;
 }
 
 export default App;
