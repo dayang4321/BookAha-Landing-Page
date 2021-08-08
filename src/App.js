@@ -5,9 +5,6 @@ import { Redirect, Route, Switch } from "react-router";
 import { AuthContext } from "./context/AuthContext";
 
 import Home from "./containers/Home/Home";
-import Admin from "./containers/Admin/Admin";
-import Logout from "./containers/Auth/Logout/Logout";
-import Auth from "./containers/Auth/Auth";
 
 
 import './App.css';
@@ -19,7 +16,7 @@ function App() {
   let routes = (
     <Switch>
       <Route path="/" exact component={Home} />
-      <Route path="/auth" component={Auth} />
+      {/* <Route path="/auth" component={Auth} /> */}
       <Redirect to="/" />
       </Switch>
   );
@@ -28,8 +25,8 @@ function App() {
     routes = (
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/admin" component={Admin} />
-        <Route path="/logout" component={Logout} />
+        {/* <Route path="/admin" component={Admin} />
+        <Route path="/logout" component={Logout} /> */}
         <Redirect to="/" />
       </Switch>
     );
