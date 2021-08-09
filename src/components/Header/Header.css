@@ -1,7 +1,14 @@
 .header {
-    background-image: url(../../assets/images/hero-bg.png);
+    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url(../../assets/images/hero-bg.png);
     background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 767px) {
+.header {
+    background-size: cover;
+    background-position: right;
+}
 }

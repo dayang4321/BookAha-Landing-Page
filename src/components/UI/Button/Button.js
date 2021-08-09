@@ -18,6 +18,7 @@ const myButton = (props) => {
       type={props.btnType}
       onClick={props.clicked ? () => props.clicked() : null}
       className="white-button b-0 text-dark bg-white border-0 rounded-sm"
+      {...props}
     >
       {' '}
       {props.btnText}{' '}
