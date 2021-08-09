@@ -2,17 +2,11 @@ import React, { useState } from 'react'
 import { Form, Row, Col } from 'react-bootstrap'
 import Input from '../../components/UI/Input/Input'
 import Button from '../../components/UI/Button/Button'
-import Amplify, { API } from 'aws-amplify'
-import config from '../../aws-exports'
 import {inputChangeHandler} from '../../shared/utility'
 import Spinner from '../../components/UI/Spinner/Spinner'
 import './Register.css'
 import { useTranslation } from "react-i18next";
 import Axios from '../../axios-base'
-
-
-Amplify.configure(config);
-
 
 const registerFormObj = {
     name: {

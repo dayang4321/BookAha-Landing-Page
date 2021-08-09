@@ -3,23 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import AuthContextProvider from "./context/AuthContext";
 
-import './i18n'
+import './i18n';
 import { BrowserRouter } from 'react-router-dom';
-
 
 ReactDOM.render(
   <BrowserRouter>
-    <AuthContextProvider>
     <React.Suspense fallback={<div></div>}>
-    <App />
+      <App />
     </React.Suspense>
-  </AuthContextProvider>
-  </BrowserRouter>
-  
- 
-,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
