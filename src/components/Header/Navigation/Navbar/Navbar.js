@@ -56,7 +56,7 @@ const MainNavbar = (props) => {
         animate="end"
       >
         <Navbar.Brand href="#" className="px-xl-5 px-lg-4 px-0 mx-3 mx-md-0">
-          <AnimatedLogo className="navbar-logo img-fluid" alt="logo" />
+          <AnimatedLogo className="navbar-logo img-fluid w-100" alt="logo" />
         </Navbar.Brand>
         <NavButton navButtonClass={navState} clicked={toggleNav} />
         <Navbar.Collapse

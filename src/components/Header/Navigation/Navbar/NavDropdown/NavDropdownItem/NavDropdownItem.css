@@ -1,8 +1,10 @@
 
 .dropdown-item {
-    width: 120px;
+    display: flex;
+    justify-content: center;
+    min-width: 110px;
     }
 
 .dropdown-item img {
-  
+  width: 1rem;
 }

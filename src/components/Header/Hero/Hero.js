@@ -5,7 +5,6 @@ import './Hero.css';
 import { Container } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { button } from 'aws-amplify';
 
 //Ease
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
@@ -57,12 +56,12 @@ const Hero = (props) => {
               {t('header.hero.title')}
             </motion.h1>
             <Button
-            //   initial="initial"
-            //   animate="animate"
-            //   exit="exit"
+              initial="initial"
+              animate="animate"
+              exit="exit"
               btnText={t('header.hero.getapp')}
               clicked={props.openModal}
-            //  variants={buttonVariants}
+              variants={buttonVariants}
             />
           </div>
         </div>

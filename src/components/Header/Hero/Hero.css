@@ -1,11 +1,6 @@
-.hero{
-    
-}
-
-
 .black-box{  
-    width: 330px;
-    height: 290px; 
+    width: 18.33rem;
+    height:16.11rem; 
     background: #000000;  
     margin-left: -30px;
 }
@@ -20,15 +15,15 @@
     color: #FFFFFF;
     font-family: 'Virgula Vulgaris', sans-serif;
     font-weight: bold;
-    font-size: 64px;
+    font-size: 3.56rem;
     text-align: right;
 }
 
 .hero button{
-    font-size: 36px;
-    padding: 22px 60px;
+    font-size: 2rem;
+    padding: 0.889rem 5rem;
     margin-left: auto;
-    margin-top: 34px;
+    margin-top: 2rem;
 }
 
 
@@ -44,9 +39,9 @@
 }
 
 .hero button{
-    font-size: 20px;
-    padding: 20px 40px;
-    margin-top: 34px;
+    font-size: 1.5rem;
+    padding: 1.25rem 2.22rem;
+    margin-top: 2.5rem;
 }
 
 

@@ -9,6 +9,7 @@
 .dropdown-menu {
   font-size: 1rem;
   min-width: 12em;
+  left: unset;
 }
 .dropdown {
   font-size: 1rem;

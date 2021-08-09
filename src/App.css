@@ -27,3 +27,11 @@ body {
   width: 100%;
 
 }
+
+@media (min-width: 1920px){
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 70vw;
+}
+
+}
