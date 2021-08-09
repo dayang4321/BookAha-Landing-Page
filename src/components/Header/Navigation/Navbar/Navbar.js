@@ -64,18 +64,21 @@ const MainNavbar = (props) => {
           id="responsive-navbar-nav"
         >
           <Nav className="ml-auto">
-            <Nav.Link className="px-xl-4 px-lg-3 px-2 py-3 py-md" href="#about">
+            <Nav.Link
+              className="px-xl-4 px-lg-3 px-2 py-4 py-md-3 py-md"
+              href="#about"
+            >
               {t('header.navbar.about')}
             </Nav.Link>
             <Nav.Link
-              className="px-xl-4 px-lg-3 px-2 py-3 py-md"
+              className="px-xl-4 px-lg-3 px-2 py-4 py-md-3 py-md"
               href="#signup"
             >
               {t('header.navbar.signup')}
             </Nav.Link>
           </Nav>
           <NavDropdown />
-          <Nav>
+          <Nav className="py-4 py-md-3 py-md">
             <Button
               btnText={t('header.navbar.download')}
               clicked={props.openModal}

@@ -1,79 +1,72 @@
-.navbar-dark .navbar-nav .nav-link{
-    font-size: 1rem;
-    line-height: 1.2rem;
-    color: #FFFFFF;
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 1.125rem;
+  line-height: 1.2rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.navbar {
+  background: linear-gradient(180deg, #000000 35.42%, rgba(48, 48, 48, 0) 100%);
+  background-color: transparent;
+  max-height: 20vh;
+}
+
+.navbar button {
+  min-width: 140px;
+  min-height: 40px;
+  width: 12rem;
+  height: 3rem;
+  font-size: 1.25rem;
+  line-height: 1.4rem;
+}
+
+.navbar-brand {
+  max-width: 18rem;
+}
+
+.navbar-dark button.navbar-toggler {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.1);
+  width: 60px;
+  height: 60px;
+  padding: 0px;
+  min-width: unset;
+}
+
+@media (max-width: 767px) {
+  .navbar.expanded,
+  .navbar.expanded #responsive-navbar-nav {
+    background-color: #000000;
+  }
+
+  .navbar.expanded #responsive-navbar-nav {
+    padding: 10px 50px 25px;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 1.25rem;
+    line-height: 1.4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+  }
+
+  .navbar {
+    max-height: 40vh;
+  }
 }
 
+@media (max-width: 420px) {
+  .navbar-brand {
+    max-width: 150px;
+  }
 
-.navbar{   
-    background: linear-gradient(180deg, #000000 35.42%, rgba(48, 48, 48, 0) 100%);
-    background-color: transparent;
-    max-height: 20vh;
-}
-
-
-
-
-.navbar button {
-    min-width: 140px;
-    min-height: 50px;
-    width: 10.6rem;
-    height: 2.33rem;
-}
-
-    .navbar-brand{
-        max-width: 18rem;
-    }
-
-
-.navbar-dark button.navbar-toggler {
-    color: #FFFFFF;
-    border-color: rgba(255,255,255,.1);
-    width: 60px ;
-    height: 60px;
-    padding: 0px;
-}
-
-@media (max-width: 767px) { 
-
-    .navbar.expanded,
-.navbar.expanded #responsive-navbar-nav{
-    background-color: #000000;
-}
-
-.navbar.expanded #responsive-navbar-nav{
-    padding: 20px 50px;
-}
-
-    .navbar-dark .navbar-nav .nav-link{
-        font-size: 18px;
-        line-height: 24px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-.navbar{
-     max-height: 40vh;
-}
-    
-}
-
-
-
-@media (max-width: 420px) { 
-    .navbar-brand{
-        max-width: 150px;
-    }
-
-    .navbar-dark button.navbar-toggler {
-   
-        width: 40px ;
-        height: 40px;
-    }
+  .navbar-dark button.navbar-toggler {
+    width: 40px;
+    height: 40px;
+  }
 }
