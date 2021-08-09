@@ -1,2 +1,29 @@
+html,
+body {
+  height: 100%;
+}
 
-       
+body {
+  overscroll-behavior-y: none;
+
+}
+
+
+.scroll-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  will-change: transform;
+}
+
+
+.App {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+}
