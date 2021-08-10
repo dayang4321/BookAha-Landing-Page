@@ -1,62 +1,57 @@
-.black-box{  
-    width: 18.33rem;
-    height:16.11rem; 
-    background: #000000;  
-    margin-left: -30px;
+.black-box {
+  width: 18.33rem;
+  height: 16.11rem;
+  background: #000000;
+  margin-left: -30px;
+  overflow: visible;
 }
 
-.title-box{
-    position: absolute;
-    top: 20%;
-    text-align: right;
+.title-box {
+  position: absolute;
+  top: 20%;
+  text-align: right;
 }
 
-.hero-title{
-    color: #FFFFFF;
-    font-family: 'Virgula Vulgaris', sans-serif;
-    font-weight: bold;
-    font-size: 3.56rem;
-    text-align: right;
+.hero-title {
+  color: #ffffff;
+  font-family: 'Virgula Vulgaris', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: right;
+   margin-top: 1.5rem;
 }
 
-.hero button{
-    font-size: 2rem;
-    padding: 0.889rem 5rem;
-    margin-left: auto;
-    margin-top: 2rem;
+.hero button {
+  font-size: 2rem;
+  padding: 0.889rem 5rem;
+  margin-left: auto;
+  margin-top: 3.5rem;
 }
-
 
 @media (max-width: 600px) {
-    
-    .black-box {  
+  .black-box {
     width: 200px;
-    height: 180px; 
+    height: 180px;
     margin-left: 0px;
- }
- .hero-title{
-   font-size: 48px;
-}
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
 
-.hero button{
+  .hero button {
     font-size: 1.5rem;
     padding: 1.25rem 2.22rem;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
+  }
 }
-
-
-}
-
 
 @media (max-width: 400px) {
-    
-    .black-box {  
+  .black-box {
     width: 160px;
-    height: 140px; 
-    background: #000000; 
- }
- .hero-title{
-   font-size: 36px;
-}
-
+    height: 140px;
+    background: #000000;
+  }
+  .hero-title {
+    font-size: 36px;
+  }
 }

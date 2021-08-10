@@ -1,56 +1,49 @@
-.register-modal-title{
-    font-weight: bold;
-    font-size: 3.55em;
-    color: #FFFFFF;
- 
+.register-modal-title {
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: #ffffff;
 }
 
-.modal-header button span:nth-child(1){
-
-    border-radius: 50%;
-    border: 1px solid white;
-    width: 40px;
-    height: 40px;
-    display: inline-table;
-    color: white;
-    font-size: 40px;
+.modal-header button span:nth-child(1) {
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  display: inline-table;
+  color: white;
+  font-size: 40px;
 }
 
-.modal-content button.close{
-    position: absolute;
-    right: 20px;
+.modal-content button.close {
+  position: absolute;
+  right: 20px;
 }
 
-.modal-content input[type=checkbox] {
-    padding: 0;
-    width: 30px;
-    height: 30px;
-    padding-right: 10px;
+.modal-content input[type='checkbox'] {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  padding-right: 10px;
 }
 
 .modal-content label.form-check-label {
-    padding-top: 5px;
-    margin-left: 20px;
+  padding-top: 5px;
+  margin-left: 20px;
 }
 
-
-@media (max-width: 992px) { 
-    .register-modal-title{
-        font-size: 3em;
-    }
-
+@media (max-width: 992px) {
+  .register-modal-title {
+    font-size: 2rem;
+  }
 }
 
-@media (max-width: 420px) { 
-    .register-modal-title{
-        font-size: 2.5em;
-    }
-    .modal-content button.close{
-        transform: scale(0.75);
-        right: 10px;
-        top: 20px;
-    }
-
+@media (max-width: 420px) {
+  .register-modal-title {
+    font-size: 1.75rem;
+  }
+  .modal-content button.close {
+    transform: scale(0.75);
+    right: 10px;
+    top: 20px;
+  }
 }
-
-

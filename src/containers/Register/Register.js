@@ -134,7 +134,7 @@ const Register = (props) => {
         </Col>
       </Row>
 
-      <Row className="pt-md-4 pt-3">
+      <Row className="pt-3">
         <Col
           md={6}
           className="pl-md-4 px-3 px-md  pt-md-3 pt-4 d-flex align-items-center justify-content-center justify-content-md"
@@ -178,7 +178,7 @@ const Register = (props) => {
       break;
     case 'modal':
       formHeader = (
-        <h1 className="register-modal-title mb-3">
+        <h1 className="register-modal-title mb-5">
           {isSignedUp
             ? t('register.title.modal.success')
             : t('register.title.modal.default')}

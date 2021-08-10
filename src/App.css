@@ -3,12 +3,6 @@ body {
   height: 100%;
 }
 
-body {
-  overscroll-behavior-y: none;
-
-}
-
-
 .scroll-container {
   position: fixed;
   top: 0;

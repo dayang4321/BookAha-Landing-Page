@@ -6,7 +6,7 @@ import './Modal.css'
 
 const MainModal=(props)=> {
     return (
-      <Modal {...props} size="xl" aria-labelledby="registration-modal"  dialogClassName="modal-wide" centered>
+      <Modal {...props} size="lg" aria-labelledby="registration-modal"  dialogClassName="modal-wide" centered>
         <Modal.Header closeButton>
           <img src={logo} alt="logo" className="footer-logo mx-auto"/> 
         </Modal.Header>

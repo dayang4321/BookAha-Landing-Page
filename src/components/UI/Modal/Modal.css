@@ -1,13 +1,36 @@
 .modal-header {
-    border-bottom: none;
+  border-bottom: none;
 }
 
-.modal-content{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../../../assets/images/reading.png);
-    background-size: cover;
+.modal-content {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../../assets/images/reading.png);
+  background-size: cover;
 }
 
-.modal-wide{
-    width: 95vw;
-    max-width: 1200px;
+.modal-wide {
+  width: 80vw;
+  max-width: 85vw;
+}
+
+.modal.show {
+  padding-right: 0px !important;
+}
+
+.modal.show .modal-dialog {
+  margin: auto !important;
+}
+
+@media (min-width: 1920px) {
+  .modal-wide {
+    width: 85vw;
+    max-width: 60vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-wide {
+    width: 90vw;
+    max-width: 95vw;
+  }
 }
