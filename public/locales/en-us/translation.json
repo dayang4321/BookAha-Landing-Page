@@ -1,58 +1,58 @@
-  {
-    "header":{
-        "navbar": {
-            "about" : "About",
-            "signup": "SignUp",
-            "download": "Download Now"
-        },
-        "hero":{
-            "title": "Share thoughts from books you love",
-            "getapp": "Get the App"
-        }
+{
+  "header": {
+    "navbar": {
+      "about": "About",
+      "signup": "Signup",
+      "download": "Download Now"
     },
-
-    "main": {
-        "block1": {
-            "title": "Organize your thoughts",
-            "text": "Organize all the inspiration, ideas and lessons from books you’re reading."
-        },
-        "block2": {
-            "title": "Share your thoughts",
-            "text": "Send your thoughts on books and articles to a community of readers like yourself."
-        },
-        "block3": {
-            "title": "Discover new content",
-            "text": "Find book reviews, new books, events and more exciting content curated for you."
-        }
-    },
-
-    "register": {
-        "title":{
-            "footer": {
-                "default": "Be the first to know when we launch",
-                "success": "Congrats! You'll be Notified!"
-            },
-            "modal": {
-                "default": "Get free access to exclusive reading clubs when you sign up for the beta test",
-                "success": "Congrats! You'll be the first to know when we launch"
-            },
-            "error":"Oops! Looks like something went wrong"
-        },
-        "input":{
-            "name": {
-                "label": "Name",
-                "placeholder": "Name"
-            },
-            "email": {
-                "label": "Email Address",
-                "placeholder": "Email Address"
-            },
-
-            "isSubscribed": {
-                "label": "I would love to join the beta test"
-            }
-        },
-
-        "notify": "Notify Me"
+    "hero": {
+      "title": "Share thoughts from books you love",
+      "getapp": "Get the App"
     }
+  },
+
+  "main": {
+    "block1": {
+      "title": "Organize your thoughts",
+      "text": "Organize all the inspiration, ideas and lessons from books you’re reading."
+    },
+    "block2": {
+      "title": "Share your thoughts",
+      "text": "Send your thoughts on books and articles to a community of readers like yourself."
+    },
+    "block3": {
+      "title": "Discover new content",
+      "text": "Find book reviews, new books, events and more exciting content curated for you."
+    }
+  },
+
+  "register": {
+    "title": {
+      "footer": {
+        "default": "Be the first to know when we launch",
+        "success": "Congrats! You'll be Notified!"
+      },
+      "modal": {
+        "default": "Get free access to exclusive reading clubs when you sign up for the beta test",
+        "success": "Congrats! You'll be the first to know when we launch"
+      },
+      "error": "Oops! Looks like something went wrong"
+    },
+    "input": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Name"
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "Email Address"
+      },
+
+      "isSubscribed": {
+        "label": "I would love to join the beta test"
+      }
+    },
+
+    "notify": "Notify Me"
   }
+}

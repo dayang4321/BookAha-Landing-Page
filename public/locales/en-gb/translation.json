@@ -2,7 +2,7 @@
     "header":{
         "navbar": {
             "about" : "About",
-            "signup": "SignUp",
+            "signup": "Signup",
             "download": "Download Now"
         },
         "hero":{

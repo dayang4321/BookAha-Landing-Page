@@ -12,7 +12,6 @@ const Home = (props) => {
     return setModalShow(!modalShow);
   };
 
- 
   return (
     <div>
       <MainNavbar openModal={toggleModal} />
