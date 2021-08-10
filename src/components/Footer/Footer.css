@@ -1,7 +1,7 @@
 .footer {
   background-color: #000000;
   color: #ffffff;
-  padding: 5rem 8rem 2rem;
+  padding: 5rem 0rem 2rem;
 }
 
 .footer-title {
@@ -23,7 +23,7 @@
 
 @media (max-width: 768px) {
   .footer {
-    padding: 4rem 3rem 2rem;
+    padding: 4rem 0rem 2rem;
   }
   .footer-title {
     font-size: 2.5rem;
@@ -33,7 +33,7 @@
 
 @media (max-width: 578px) {
   .footer {
-    padding: 3rem 2rem 2rem;
+    padding: 3rem 0rem 2rem;
   }
 
   .footer-logo {

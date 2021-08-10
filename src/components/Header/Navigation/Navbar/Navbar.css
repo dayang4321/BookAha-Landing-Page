@@ -25,6 +25,7 @@
 
 .navbar-brand {
   width: 22rem;
+  max-width: 25vw;
 }
 
 .navbar-dark button.navbar-toggler {
