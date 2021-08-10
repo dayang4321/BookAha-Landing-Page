@@ -5,7 +5,7 @@
 .info-title {
   font-weight: 800;
   font-size: 3.56rem;
-  line-height: 4rem;
+  line-height: 1.167;
   letter-spacing: -0.02em;
   color: #000000;
 }
@@ -71,40 +71,21 @@
   }
 
   .info-text {
-    margin-top: 30px;
+    margin-top: 2rem;
   }
   .info-row .col-md-auto {
     max-width: 100% !important;
   }
   .img-block {
-    margin-top: 75px;
-  }
-  .top-left {
-    transform: translate(-30px, -35px);
+    margin-top: 5rem;
   }
 
-  .top-right {
-    transform: translate(30px, -35px);
-  }
+.info-title {
+  font-weight: 800;
+  font-size: 2.66rem;
 }
-
-@media (max-width: 767px) {
   .info-row {
     padding: 40px 25px;
   }
 
-  .info-text {
-    margin-top: 30px;
-  }
-
-  .img-block {
-    margin-top: 75px;
-  }
-  .top-left {
-    transform: translate(-25px, -30px);
-  }
-
-  .top-right {
-    transform: translate(25px, -30px);
-  }
 }
