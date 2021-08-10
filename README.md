@@ -2,13 +2,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Figma Design Link
 
-https://www.figma.com/file/u66DEHb05elcQJ1BF0IvsW/Untitled?node-id=0%3A1
+https://www.figma.com/file/bfafQsULZAT1LqaK3uxB8F/Bookaha-Landing?node-id=0%3A1
 
-## Live Deployment
+## Deployment
 
-https://master.d1w13cy7oz03c1.amplifyapp.com/
-
-
+https://bookaha-landing.netlify.app
 ## Available Scripts
 
 In the project directory, you can run:
